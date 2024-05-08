@@ -1,4 +1,4 @@
-# Poubelle Intelligente
+# POUBELLE INTELLIGENTE
 
 | | |
 |-|-|
