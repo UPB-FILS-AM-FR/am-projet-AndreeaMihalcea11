@@ -4,6 +4,7 @@
 |-|-|
 |`Mihalcea Andreea-Elena` | 
 
+
 ## Description
 Ce projet consiste à créer une poubelle intelligente qui ouvre automatiquement son couvercle lorsqu'un objet est détecté à moins de 30 centimètres. 
 Cette fonctionnalité vise à réduire le contact physique et à améliorer l'hygiène.
