@@ -77,9 +77,3 @@ Le projet a démontré la viabilité de l'utilisation d'un Arduino et de composa
 [Tutorial 2](https://www.youtube.com/watch?v=9yrP1CZN3Ds)
 
 
-
-
-
-[Article 1](https://www.explainthatstuff.com/induction-motors.html)
-
-[Link title](https://projecthub.arduino.cc/)
