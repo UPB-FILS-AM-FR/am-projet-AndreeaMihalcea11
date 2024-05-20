@@ -7,18 +7,24 @@
 
 
 ## Description
-Ce projet consiste à créer une poubelle intelligente qui ouvre automatiquement son couvercle lorsqu'un objet est détecté à moins de 30 centimètres. 
-Cette fonctionnalité vise à réduire le contact physique et à améliorer l'hygiène.
+J'ai développé un projet de séparation des déchets basé sur Arduino, qui peut trier automatiquement les déchets plastiques et métalliques en utilisant des capteurs et des actionneurs. De plus, notre projet peut également détecter lorsque la poubelle est pleine et alerter l'utilisateur ou le service de gestion des déchets.
 
 ## Motivation
-La motivation de développer cette poubelle intelligente est de minimiser la propagation des germes et des bactéries dans des environnements où l'hygiène est primordiale, tels que les cuisines, les hôpitaux et les bureaux.
+ L'une des principales problématiques environnementales auxquelles nous sommes confrontés aujourd'hui est l'élimination et le recyclage corrects des déchets. Beaucoup de ces déchets, comme le plastique et le métal, peuvent être réutilisés ou recyclés s'ils sont séparés du reste des ordures. Cependant, le tri manuel des déchets est fatigant, chronophage et inefficace. C'est pourquoi nous avons décidé de créer une telle poubelle qui aide à résoudre le problème du recyclage des emballages en plastique et en métal.
 
 ## Architecture
 L'architecture du système comprend :
-Carte Compatible Arduino Uno R3 : Agit comme l'unité de contrôle centrale.
-Module Ultrasonique HC-SR04 : Détecte la proximité d'un objet avec la poubelle.
-Moteur Servo MICRO SERVO TOWER PRO 9G : Contrôle l'ouverture et la fermeture du couvercle de la poubelle.
+Arduino Mega: Agit comme l'unité de contrôle centrale.
 Fils de Connexion : Facilitent les connexions entre les composants sur une plaque d'essai.
+2x Module Ultrasonique HC-SR04
+2x Moteur Servo MICRO SERVO TOWER PRO 9G : Contrôle l'ouverture et la fermeture du couvercle de la poubelle.
+Capteur de proximité capacitif (PNP, sortie NO, 6 ~ 12 V)
+2x Capteur de proximité inductif (PNP, sortie NO, 6 ~ 12 V)
+2x Batterie 9~12V
+2x Poubelle
+2x Led
+3x Resistors
+Breadbord
 
 ### Block diagram
 Le schéma de bloc représente visuellement les connexions entre l'Arduino Uno, le capteur ultrasonique, le moteur servo et les autres composants.
@@ -34,12 +40,16 @@ Le schéma de bloc représente visuellement les connexions entre l'Arduino Uno, 
 
 <!-- This is just an example, fill in with your actual components -->
 
+
 | Device | Usage | Price |
 |--------|--------|-------|
-| Arduino Uno R3 + Câble | Contrôleur principal | [75 RON](https://www.conexelectronic.ro/cautare?controller=search&orderby=position&orderway=desc&ssa_submit=&search_query=Cablu+jumper+de+20+cm) |
-| Module Ultrasonique HC-SR04 | Mesure de distance | [10 RON](https://www.optimusdigital.ro/ro/butoane-i-comutatoare/1119-buton-6x6x6.html?search_query=buton&results=222) |
-| Moteur Servo TOWER PRO 9G MICRO | Mouvement du couvercle | [24 RON](https://www.conexelectronic.ro/senzori-si-module-pentru-platforme-de-dezvoltare/15482-MINISERVOMOTOR-SG90-9G.html) |
-|Fils de Connexion | Connexions des composants | [16 RON](https://cleste.ro/pro-signal-psg-jmp150mm-jumper-cable-male-to-male-connectors-150mm-length-pack-of-10-arduino-beaglebone-pachet.html) |
+| Arduino Mega | Contrôleur principal | [73 RON](https://www.optimusdigital.ro/ro/compatibile-cu-arduino-mega/471-placa-de-dezvoltare-compatibila-cu-arduino-mega-2560-atmega2560-ch340.html?search_query=%09Placa+de+dezvoltare+compatibila+cu+Arduino+MEGA+2560+%28ATmega2560+++CH340%29&results=5) |
+| 2x Moteur Servo MICRO SERVO TOWER PRO 9G | Mouvement du couvercle | [28 RON](https://www.optimusdigital.ro/ro/motoare-servomotoare/26-micro-servomotor-sg90.html?search_query=Micro+Servomotor+SG90+90%C2%B0&results=9) |
+|2x Capteur de proximité inductif |  | [30 RON](https://cleste.ro/pro-signal-psg-jmp150mm-jumper-cable-male-to-male-connectors-150mm-length-pack-of-10-arduino-beaglebone-pachet.html) |
+|Capteur de proximité capacitif|  | [54 RON](https://www.fruugo.ro/ljc18a3-h-zby-1-10mm-capacitance-proximity-sensor-switch-no-dc-6-36v-300ma/p-160356332-340280224?language=en&ac=KelkooCSS&asc=pmax&gad_source=1&gclid=Cj0KCQjw6auyBhDzARIsALIo6v_tLAd3UDKk4OnZNB3JifeboIvujaI3njk0DPMUdVTTvihMQpzxyQIaAjtzEALw_wcB)  |
+|Fils de Connexion | Connexions des composants | [16 RON](https://www.optimusdigital.ro/ro/senzori-senzori-de-distanta/3753-senzor-de-metal-normal-deschis-lj12a34zbx.html?search_query=Senzor+Inductiv+de+Proximitate+LJ12A34Z%2FBX&results=1) |
+|2x Module Ultrasonique HC-SR04|  | [20 RON](https://ardushop.ro/ro/electronica/47-modul-senzor-ultrasonic-detector-distanta.html?search_query=Ultrasonic&results=5) |
+| Breadbord|  | [25 RON](https://ardushop.ro/ro/electronica/163-kit-breadboard830-65xfire-jumper-sursa-alimentare-335v.html) |
 
 ### Libraries
 
