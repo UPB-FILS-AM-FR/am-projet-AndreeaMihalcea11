@@ -33,7 +33,7 @@ Le schéma de bloc représente visuellement les connexions entre l'Arduino Uno, 
 
 ### Schematic
 
-![Schematic](schema.png)
+![Schematic](schemeproiect/schema.png)
 
 ### Components
 
