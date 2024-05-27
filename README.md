@@ -18,7 +18,6 @@ Arduino Mega: Agit comme l'unité de contrôle centrale.
 Fils de Connexion : Facilitent les connexions entre les composants sur une plaque d'essai.
 2x Module Ultrasonique HC-SR04
 2x Moteur Servo MICRO SERVO TOWER PRO 9G : Contrôle l'ouverture et la fermeture du couvercle de la poubelle.
-Capteur de proximité capacitif (PNP, sortie NO, 6 ~ 12 V)
 2x Capteur de proximité inductif (PNP, sortie NO, 6 ~ 12 V)
 2x Batterie 9~12V
 2x Poubelle
@@ -56,35 +55,36 @@ Le schéma de bloc représente visuellement les connexions entre l'Arduino Uno, 
 
 | Library | Description | Usage |
 |---------|-------------|-------|
+| Arduino Mega | Une carte de microcontrôleur|Agit comme l'unité de contrôle centrale pour gérer les différents composants  |
 | [Servo.h | Manages servo motor | Used for accesing the peripherals of the microcontroller  |
+| InductiveSensor | Gère les capteurs de proximité inductifs | Détecter des objets métalliques près des poubelles |
+| Module Ultrasonique HC-SR04|Gère le module ultrasonique HC-SR04 |mesurer la distance avec les capteurs ultrasoniques  |
+| Battery | La source d'alimentation | Alimente l'Arduino et tous les composants connectés  |
+| Resistor | Composant électronique utilisé pour limiter le courant | protéger des composants comme les LED de recevoir trop de courant |
+| Fils | Gère la communication I2C pour divers capteurs |Facilite la communication entre l'Arduino et les appareils I2C si nécessaire |
+| Breadbord | Un outil pour le prototypage des circuits | Used for accesing the peripherals of the microcontroller  |
+
+
 
 ## Conception Logicielle
 Utilise la bibliothèque Servo.h pour contrôler le moteur servo qui manipule le couvercle de la poubelle. L'algorithme détecte la distance des objets et commande le moteur servo pour ouvrir ou fermer le couvercle en fonction de la distance détectée.
 
-![Cod](cod.png)
 
 ## Résultats Obtenus
 Le prototype fonctionnel a été capable de détecter les objets et d'opérer automatiquement le couvercle de la poubelle. Les tests ont montré une réaction fiable à la présence d'objets dans la plage définie.
 
 ## Conclusions
-Le projet a démontré la viabilité de l'utilisation d'un Arduino et de composants simples pour créer des solutions automatisées efficaces et accessibles, avec des applications possibles dans de nombreux autres domaines.
-
-## Log
-
-<!-- write every week your progress here -->
-
-### Week 6 - 12 May
-
-### Week 7 - 19 May
-
-### Week 20 - 26 May
+Amélioration du recyclage : La poubelle intelligente améliore l'efficacité du tri des déchets en séparant automatiquement les matériaux recyclables comme le plastique et le métal, réduisant ainsi la nécessité d'un tri manuel.
+Facilité d'utilisation : Grâce à la détection automatique des objets et à l'ouverture/fermeture automatisée des couvercles, la poubelle intelligente offre une solution pratique et hygiénique pour la gestion des déchets.
+Impact environnemental positif : En facilitant le recyclage et en alertant les utilisateurs lorsque la poubelle est pleine, le système contribue à une gestion plus durable des déchets et à la réduction de l'impact environnemental.
 
 
 ## Reference links
 
 <!-- Fill in with appropriate links and link titles -->
 
-[Tutorial 1](https://www.youtube.com/watch?v=aqAUIhVwF6o)
-[Tutorial 2](https://www.youtube.com/watch?v=9yrP1CZN3Ds)
+[Tutorial 1]([https://www.youtube.com/watch?v=aqAUIhVwF6o](https://www.youtube.com/watch?v=LIy0Gwm06-M&ab_channel=SKCETECE01))
+[Tutorial 2](https://youtu.be/9yrP1CZN3Ds?si=0rI5M6pl-R9oE0Vp)
+[Tutorial 3](https://www.insightfulinkwalk.com/2019/08/arduino-trash-separation-project.html)
 
 
