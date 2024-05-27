@@ -83,7 +83,7 @@ Impact environnemental positif : En facilitant le recyclage et en alertant les u
 
 <!-- Fill in with appropriate links and link titles -->
 
-[Tutorial 1]([https://www.youtube.com/watch?v=aqAUIhVwF6o](https://www.youtube.com/watch?v=LIy0Gwm06-M&ab_channel=SKCETECE01))
+[Tutorial 1](https://www.youtube.com/watch?v=LIy0Gwm06-M&ab_channel=SKCETECE01)
 [Tutorial 2](https://youtu.be/9yrP1CZN3Ds?si=0rI5M6pl-R9oE0Vp)
 [Tutorial 3](https://www.insightfulinkwalk.com/2019/08/arduino-trash-separation-project.html)
 
