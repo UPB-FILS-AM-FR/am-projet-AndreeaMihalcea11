@@ -72,6 +72,9 @@ Utilise la bibliothèque Servo.h pour contrôler le moteur servo qui manipule le
 
 ## Résultats Obtenus
 Le prototype fonctionnel a été capable de détecter les objets et d'opérer automatiquement le couvercle de la poubelle. Les tests ont montré une réaction fiable à la présence d'objets dans la plage définie.
+(Schemeproiect/pozaproiect.png)
+
+
 
 ## Conclusions
 Amélioration du recyclage : La poubelle intelligente améliore l'efficacité du tri des déchets en séparant automatiquement les matériaux recyclables comme le plastique et le métal, réduisant ainsi la nécessité d'un tri manuel.
