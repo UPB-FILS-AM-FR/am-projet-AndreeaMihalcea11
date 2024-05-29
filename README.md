@@ -72,7 +72,7 @@ Utilise la bibliothèque Servo.h pour contrôler le moteur servo qui manipule le
 
 ## Résultats Obtenus
 Le prototype fonctionnel a été capable de détecter les objets et d'opérer automatiquement le couvercle de la poubelle. Les tests ont montré une réaction fiable à la présence d'objets dans la plage définie.
-(Schemeproiect/Schemeproiect/pozaproiect.png)
+![Résultats Obtenus}(/Schemeproiect/Schemeproiect/pozaproiect.png).
 
 
 
